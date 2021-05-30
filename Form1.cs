@@ -16,6 +16,29 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+        // Fields
+        int age;
 
+        private void btn_Submit_Click(object sender, EventArgs e)
+        {
+            //Check all inputs
+            checkName();
+            checkAge();
+            checkSex();
+            checkEmail();
+            checkContactNumber();
+            checkAddress();
+            checkTemperature();
+        }
+
+        // Methods
+        // Input checker
+        private void checkName() { }
+        private void checkAge() { }
+        private void checkSex() { }
+        private void checkEmail() { }
+        private void checkContactNumber() { }
+        private void checkAddress() { }
+        private void checkTemperature() { }
     }
 }
