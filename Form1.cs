@@ -19,9 +19,6 @@ namespace Contact_Tracing
         }
 
         // Notes
-        // CHeck strings
-        // Submit button
-        // Clear textbox after submit
         // Read Form
 
         // Fields
