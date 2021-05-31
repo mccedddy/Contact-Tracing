@@ -60,7 +60,7 @@ namespace Contact_Tracing
             // 
             this.textCovid19.AutoSize = true;
             this.textCovid19.Font = new System.Drawing.Font("Tw Cen MT", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textCovid19.Location = new System.Drawing.Point(128, 9);
+            this.textCovid19.Location = new System.Drawing.Point(117, 9);
             this.textCovid19.Name = "textCovid19";
             this.textCovid19.Size = new System.Drawing.Size(284, 69);
             this.textCovid19.TabIndex = 0;
@@ -127,7 +127,7 @@ namespace Contact_Tracing
             // 
             this.textContactTracing.AutoSize = true;
             this.textContactTracing.Font = new System.Drawing.Font("Tw Cen MT", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textContactTracing.Location = new System.Drawing.Point(128, 65);
+            this.textContactTracing.Location = new System.Drawing.Point(117, 65);
             this.textContactTracing.Name = "textContactTracing";
             this.textContactTracing.Size = new System.Drawing.Size(269, 47);
             this.textContactTracing.TabIndex = 10;
@@ -138,7 +138,7 @@ namespace Contact_Tracing
             // 
             this.textFillUpForm.AutoSize = true;
             this.textFillUpForm.Font = new System.Drawing.Font("Tw Cen MT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textFillUpForm.Location = new System.Drawing.Point(189, 112);
+            this.textFillUpForm.Location = new System.Drawing.Point(174, 112);
             this.textFillUpForm.Name = "textFillUpForm";
             this.textFillUpForm.Size = new System.Drawing.Size(148, 33);
             this.textFillUpForm.TabIndex = 11;
@@ -313,7 +313,7 @@ namespace Contact_Tracing
             this.Controls.Add(this.textCovid19);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Temperature:";
+            this.Text = "Contact Tracing Fill-Up Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
