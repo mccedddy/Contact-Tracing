@@ -74,6 +74,12 @@ namespace Contact_Tracing
                 temperatureTextBox.Text = "";
             }
         }
+        private void btn_ViewList_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
 
         // Methods
         // Input checker
@@ -236,5 +242,8 @@ namespace Contact_Tracing
                 invalidInput = true; 
             }
         }
+        
+
+        private void Form1_Load(object sender, EventArgs e) { }
     }
 }

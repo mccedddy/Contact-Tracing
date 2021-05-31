@@ -54,6 +54,7 @@ namespace Contact_Tracing
             this.labelAddress = new System.Windows.Forms.Label();
             this.labelTemperature = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
+            this.btn_ViewList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textCovid19
@@ -281,11 +282,22 @@ namespace Contact_Tracing
             this.labelDate.TabIndex = 24;
             this.labelDate.Text = "Date:";
             // 
+            // btn_ViewList
+            // 
+            this.btn_ViewList.Location = new System.Drawing.Point(381, 608);
+            this.btn_ViewList.Name = "btn_ViewList";
+            this.btn_ViewList.Size = new System.Drawing.Size(112, 34);
+            this.btn_ViewList.TabIndex = 25;
+            this.btn_ViewList.Text = "View List";
+            this.btn_ViewList.UseVisualStyleBackColor = true;
+            this.btn_ViewList.Click += new System.EventHandler(this.btn_ViewList_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 674);
+            this.Controls.Add(this.btn_ViewList);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelTemperature);
             this.Controls.Add(this.labelAddress);
@@ -314,6 +326,7 @@ namespace Contact_Tracing
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Fill-Up Form";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,6 +359,7 @@ namespace Contact_Tracing
         private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.Label labelTemperature;
         private System.Windows.Forms.Label labelDate;
+        private System.Windows.Forms.Button btn_ViewList;
     }
 }
 
