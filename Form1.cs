@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,7 @@ namespace Contact_Tracing
         long contactNumber;
         double temperature;
         bool invalidInput = false;
+        StreamWriter outputFile;
 
         private void btn_Submit_Click(object sender, EventArgs e)
         {
@@ -45,6 +47,34 @@ namespace Contact_Tracing
             {
                 MessageBox.Show("Invalid input!");
                 invalidInput = false;
+            }
+            else
+            {
+                // Write on file
+                outputFile = File.AppendText("Contact Tracing List.txt");
+                outputFile.WriteLine("Name: " + lastNameTextBox.Text + ", " + firstNameTextbox.Text);
+                outputFile.WriteLine("Age: " + ageTextBox.Text);
+                outputFile.WriteLine("Sex: " + sexComboBox.Text);
+                outputFile.WriteLine("Email: " + eMailTextBox.Text);
+                outputFile.WriteLine("Contact Number: " + contactNumberTextBox.Text);
+                outputFile.WriteLine("Address: " + addressTextBox.Text);
+                outputFile.WriteLine("Temperature: " + temperatureTextBox.Text + " °C");
+                outputFile.WriteLine("Date: " + dateAndTime.Text);
+                outputFile.WriteLine("==================================================================================");
+                outputFile.Close();
+
+                // Show message
+                MessageBox.Show("Input submitted!");
+
+                // Clear textboxes
+                lastNameTextBox.Text = "";
+                firstNameTextbox.Text = "";
+                ageTextBox.Text = "";
+                sexComboBox.Text = "";
+                eMailTextBox.Text = "";
+                contactNumberTextBox.Text = "";
+                addressTextBox.Text = "";
+                temperatureTextBox.Text = "";
             }
         }
 

@@ -268,9 +268,9 @@ namespace Contact_Tracing
             this.labelTemperature.AutoSize = true;
             this.labelTemperature.Location = new System.Drawing.Point(12, 507);
             this.labelTemperature.Name = "labelTemperature";
-            this.labelTemperature.Size = new System.Drawing.Size(114, 25);
+            this.labelTemperature.Size = new System.Drawing.Size(147, 25);
             this.labelTemperature.TabIndex = 23;
-            this.labelTemperature.Text = "Temperature:";
+            this.labelTemperature.Text = "Temperature (°C):";
             // 
             // labelDate
             // 
