@@ -79,7 +79,7 @@ namespace Contact_Tracing
             // Hide this form and open Form2
             this.Hide();
             Form2 f2 = new Form2();
-            f2.ShowDialog();
+            f2.Show();
         }
 
         // Methods

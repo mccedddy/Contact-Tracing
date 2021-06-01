@@ -30,10 +30,10 @@ namespace Contact_Tracing
         }
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            // Hide this form and open Form1
-            this.Hide();
+            // Close this form and open Form1
+            this.Close();
             Form1 f1 = new Form1();
-            f1.ShowDialog();
+            f1.Show();
         }
     }
 }
