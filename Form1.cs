@@ -243,8 +243,11 @@ namespace Contact_Tracing
                 invalidInput = true; 
             }
         }
-        
-
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // When form is closed, exit application
+            Application.Exit();
+        }
         private void Form1_Load(object sender, EventArgs e) { }
     }
 }

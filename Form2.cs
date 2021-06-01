@@ -31,9 +31,15 @@ namespace Contact_Tracing
         private void btn_Back_Click(object sender, EventArgs e)
         {
             // Close this form and open Form1
-            this.Close();
+            this.Hide();
             Form1 f1 = new Form1();
             f1.Show();
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // When form is closed, exit application
+            Application.Exit();
         }
     }
 }
