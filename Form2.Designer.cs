@@ -98,6 +98,8 @@ namespace Contact_Tracing
             this.Controls.Add(this.textFillUpForm);
             this.Controls.Add(this.textContactTracing);
             this.Controls.Add(this.textCovid19);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing List";
